@@ -573,9 +573,9 @@ namespace Maddalena
         {
             get
             {
-                foreach (var k in typeof(Country).GetRuntimeProperties().Where(x => x.PropertyType == typeof(Country)))
+                foreach (var k in typeof(Country).GetProperties().Where(x => x.PropertyType == typeof(Country)))
                 {
-                    yield return k.GetValue(null) as Country;
+                    yield return k.GetValue(null,null) as Country;
                 }
             }
         }
