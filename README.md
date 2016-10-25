@@ -1,25 +1,25 @@
 # Countries
 
 ISO 3166 countries library, including:
-*Common Name
-*Official Name
-*TLD
-*Country code two letter
-*ISO numeric code
-*Country code three letter
-*CIOC
-*Currencies
-*CallingCodes
-*Capital
-*AlternativeSpellings
-*Region
-*SubRegion
-*Borders
-*Landlocked
-*Area in square kilometers
+  - Common Name
+  - Official Name
+  - TLD
+  - Country code two letter
+  - ISO numeric code
+  - Country code three letter
+  - CIOC
+  - Currencies
+  - CallingCodes
+  - Capital
+  - AlternativeSpellings
+  - Region
+  - SubRegion
+  - Borders
+  - Landlocked
+  - Area in square kilometers
 
 ## Usage
-`
+```c
         public ActionResult Home(Func<string> mustache)
         {
 			//instancing a country
@@ -31,4 +31,4 @@ ISO 3166 countries library, including:
 
 			var usa  = Country.FromCode(CountryCode.US);
         }
-`
+````
