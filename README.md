@@ -19,16 +19,15 @@ ISO 3166 countries library, including:
   - Area in square kilometers
 
 ## Usage
-```c
-        public ActionResult Home(Func<string> mustache)
-        {
-			//instancing a country
-            var country = Country.Albania;
-            Console.WriteLine(country);
+```c#
+public ActionResult Home(Func<string> mustache)
+{
+    // instancing a country
+    var country = Country.Albania;
+    Console.WriteLine(country);
 			
-			//linq queries
-            var founds = Country.All.Where(x=>x.Landlocked == true && x.Currencies.Contains("EUR"));
-
-			var usa  = Country.FromCode(CountryCode.US);
-        }
+    // linq queries
+    var founds = Country.All.Where(x=>x.Landlocked && x.Currencies.Contains("EUR"));
+    var usa  = Country.FromCode(CountryCode.US);
+}
 ````
